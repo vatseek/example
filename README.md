@@ -3,6 +3,8 @@ INSTALL
 
 Configure .env file (DB section)
 
+Install npm modules from server and client separately (root and client folders)
+
 Create DB schema by run migrations ```npm run migration:run``` (knex lib should be installed global), 
 Or use `dump.sql` file
 
