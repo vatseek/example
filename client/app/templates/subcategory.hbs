@@ -1,0 +1,12 @@
+<Breadcrumbs @category={{@model.category}} @subcategory={{@model.subcategory}} />
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>Category: {{ @model.subcategory.name }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <ItemsList @items={{@model.entities}} />
+  </div>
+</div>

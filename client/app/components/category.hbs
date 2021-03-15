@@ -1,0 +1,13 @@
+<li>
+  {{#if @parent }}
+    {{#link-to "subcategory" @parent.slug @category.slug }}{{@category.name}}{{/link-to}}
+  {{ else }}
+    <LinkTo @route="category" @model={{@category.slug}}>
+      {{@category.name}}
+    </LinkTo>
+  {{/if}}
+
+  {{#if @category.children}}
+    <Categories @categories={{@category.children}} @parent={{@category}} />
+  {{/if}}
+</li>

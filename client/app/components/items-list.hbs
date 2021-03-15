@@ -1,0 +1,7 @@
+<ul class="list-group items-list" >
+  {{#each @items as |item|}}
+    <li class="list-group-item">
+      {{#link-to "entity" item.category.slug item.subcategory.slug item.id }}{{ item.title }}{{/link-to}}
+    </li>
+  {{/each}}
+</ul>

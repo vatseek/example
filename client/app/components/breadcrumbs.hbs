@@ -1,0 +1,14 @@
+<nav aria-label="breadcrumb" style="width: 100%" >
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><LinkTo @route="index">Home</LinkTo></li>
+    {{#if @category }}
+      <li class="breadcrumb-item">{{#link-to "category" @category.slug }}{{@category.name}}{{/link-to}}</li>
+    {{/if}}
+    {{#if @subcategory }}
+      <li class="breadcrumb-item">{{#link-to "subcategory" @category.slug @subcategory.slug }}{{@subcategory.name}}{{/link-to}}</li>
+    {{/if}}
+    {{#if @entity }}
+      <li class="breadcrumb-item">{{#link-to "entity" @category.slug @subcategory.slug @entity.id }}{{@entity.title}}{{/link-to}}</li>
+    {{/if}}
+  </ol>
+</nav>

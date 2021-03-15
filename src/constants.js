@@ -1,0 +1,15 @@
+TYPE_JSON = 'json'
+TYPE_XML = 'xml'
+TYPE_YML = 'yml'
+
+module.exports = {
+  TYPE_JSON,
+  TYPE_XML,
+  TYPE_YML,
+
+  AVAILABLE_TYPE: [TYPE_JSON, TYPE_XML, TYPE_YML],
+
+  CATEGORY_TYPE_NEWS: 0,
+  CATEGORY_TYPE_BLOG: 1,
+  CATEGORY_TYPE_FORUM: 2,
+}

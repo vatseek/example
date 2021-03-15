@@ -1,0 +1,18 @@
+ul {
+  list-style-type: none;
+}
+
+.tree ul {
+  margin: 0;
+  padding: 10px;
+  text-align: left;
+}
+
+.tree > ul ul > li {
+  font-size: 16px;
+}
+
+.items-list {
+  width: 100%;
+  margin-top: 20px;
+}
